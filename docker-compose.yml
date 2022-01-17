@@ -12,7 +12,7 @@ services:
      restart: always
      env_file: .env
      environment:
-       WORDPRESS_DB_HOST: database-1.cs0k8kt1zccr.us-east-1.rds.amazonaws.com
+       WORDPRESS_DB_HOST: $DB_HOST
        WORDPRESS_DB_USER: $MYSQL_USER
        WORDPRESS_DB_PASSWORD: $MYSQL_PASSWORD
 
